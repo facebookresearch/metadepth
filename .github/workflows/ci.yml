@@ -1,0 +1,12 @@
+name: No-Op CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+jobs:
+  noop:
+    runs-on: ubuntu-latest
+    steps:
+      - name: No-Op
+        run: echo "This is a no-op CI workflow."
